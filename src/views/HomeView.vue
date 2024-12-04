@@ -1,6 +1,7 @@
 <script setup>
-import FeatureCard from "../components/FeatureCard.vue";
+import FeaturesCard from "../components/FeaturesCard.vue";
 import StatsCard from "../components/StatsCard.vue";
+import RecommendationsCard from "../components/RecommendationsCard.vue";
 </script>
 
 <template>
@@ -70,10 +71,11 @@ import StatsCard from "../components/StatsCard.vue";
       >
         <img src="/assets/mockup-2.png" class="md:w-6/12" alt="" />
         <div class="block space-y-5 md:w-6/12">
-          <FeatureCard />
+          <FeaturesCard />
         </div>
       </div>
     </div>
+    <!-- why choose this website -->
     <div class="py-20 max-lg:py-6 px-28 max-lg:px-8 w-full">
       <div class="flex max-lg:block md:justify-between gap-10 items-center">
         <img
@@ -124,7 +126,27 @@ import StatsCard from "../components/StatsCard.vue";
           alt=""
         />
       </div>
-      <div class="flex max-lg:grid max-lg:grid-cols-2 md:justify-between gap-4 items-center"><StatsCard /></div>
+      <div
+        class="flex max-lg:grid max-lg:grid-cols-2 md:justify-between gap-4 items-center"
+      >
+        <StatsCard />
+      </div>
+    </div>
+    <!-- recommendation -->
+    <div class="py-20 max-lg:py-6 space-y-14 px-28 max-lg:px-8 w-full">
+      <div class="text-center space-y-4">
+        <h1 class="text-primary text-5xl font-bold">
+          Apa Kata Pengguna Tentang Kami
+        </h1>
+        <p class="text-2xl max-lg:text-base">
+          Temukan bagaimana produk dan layanan kami telah meningkatkan
+          pengalaman pengguna. Cerita mereka menjadi bukti komitmen kami untuk
+          memberikan solusi terbaik bagi Anda
+        </p>
+      </div>
+      <div class="flex justify-between gap-10 items-center">
+        <RecommendationsCard />
+      </div>
     </div>
   </div>
 </template>

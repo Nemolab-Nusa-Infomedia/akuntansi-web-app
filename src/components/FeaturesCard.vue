@@ -5,7 +5,7 @@
     :key="index"
   >
     <h2 class="text-2xl max-lg:text-xl text-[#F44336] font-bold">{{ item.title }}</h2>
-    <p class="text-base">{{ item.description }}</p>
+    <p class="text-lg">{{ item.description }}</p>
   </div>
 </template>
 
