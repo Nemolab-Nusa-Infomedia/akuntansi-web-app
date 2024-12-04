@@ -2,6 +2,7 @@
 </script>
 
 <template>
-   <Navbar />
-   <Footer />
+    <Navbar />
+    <router-view />
+    <Footer />
 </template>
