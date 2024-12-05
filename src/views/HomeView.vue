@@ -1,7 +1,12 @@
 <script setup>
-import FeaturesCard from "../components/FeaturesCard.vue";
-import StatsCard from "../components/StatsCard.vue";
-import RecommendationsCard from "../components/RecommendationsCard.vue";
+import FeaturesCard from "../components/FeatureCard.vue";
+import StatsCard from "../components/StatCard.vue";
+import RecommendationsCard from "../components/RecommendationCard.vue";
+import PricesCard from "../components/PriceCard.vue";
+import QuestionAccordions from "@/components/QuestionAccordion.vue";
+import { ref } from "vue";
+
+const activeButton = ref("tahun");
 </script>
 
 <template>
@@ -144,8 +149,92 @@ import RecommendationsCard from "../components/RecommendationsCard.vue";
           memberikan solusi terbaik bagi Anda
         </p>
       </div>
-      <div class="flex justify-between gap-10 items-center">
+      <div class="flex justify-between gap-10 items-stretch">
         <RecommendationsCard />
+      </div>
+    </div>
+    <!-- price -->
+    <div class="py-20 max-lg:py-6 space-y-20 px-28 max-lg:px-8 w-full">
+      <div class="text-center space-y-16">
+        <h1 class="text-primary text-5xl font-bold">Penawaran Harga Kami</h1>
+        <div
+          class="flex items-center justify-center text-xl font-semibold mx-auto w-[330px] bg-gray-200 rounded-full"
+        >
+          <button
+            @click="activeButton = 'tahun'"
+            :class="{
+              'bg-[#F44336] text-white': activeButton === 'tahun',
+              'bg-transparent text-gray-700': activeButton !== 'tahun',
+            }"
+            class="px-12 py-4 rounded-full transition"
+          >
+            Tahunan
+          </button>
+          <button
+            @click="activeButton = 'bulan'"
+            :class="{
+              'bg-primary text-white': activeButton === 'bulan',
+              'bg-transparent text-gray-700': activeButton !== 'bulan',
+            }"
+            class="px-12 py-4 rounded-full transition"
+          >
+            Bulanan
+          </button>
+        </div>
+      </div>
+      <div class="flex gap-10 items-stretch">
+        <PricesCard :activeBillingCycle="activeButton" />
+      </div>
+      <div class="flex justify-center">
+        <router-link
+          to="/"
+          class="text-primary text-3xl gap-4 font-semibold flex justify-between items-center"
+          >Lihat Selengkapnya
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="39"
+            height="38"
+            viewBox="0 0 39 38"
+            fill="none"
+          >
+            <path
+              d="M14.6801 10.4077L24.0401 19.7677L14.6801 29.1277"
+              stroke="#536DFE"
+              stroke-width="2.2464"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </router-link>
+      </div>
+    </div>
+    <!-- question -->
+    <div class="py-20 max-lg:py-6 space-y-20 px-28 max-lg:px-8 w-full">
+      <div class="text-center space-y-4">
+        <h1 class="text-primary text-5xl font-bold">Frequently Ask Question</h1>
+      </div>
+      <div>
+        <QuestionAccordions />
+      </div>
+    </div>
+    <!-- contact us -->
+    <div class="py-20 max-lg:py-6 space-y-20 px-28 max-lg:px-8 w-full">
+      <div class="space-y-10">
+        <h1 class="text-primary text-5xl font-bold leading-[70px]">
+          Siap mengoptimalkan pengelolaan keuangan <br />
+          Anda dengan Core Jurnal?
+        </h1>
+        <p class="text-2xl max-lg:text-base">
+          Bergabunglah dengan Core Jurnal hari ini dan optimalkan pengelolaan
+          keuangan Anda dengan dukungan dari tim ahli kami. <br />
+          Mulailah perjalanan menuju efisiensi keuangan sekarang juga!
+        </p>
+      </div>
+      <div class="flex justify-between items-center">
+        <img src="/assets/contact.png" alt="" />
+        <div>
+         <!-- <ContactForm /> -->
+        </div>
       </div>
     </div>
   </div>

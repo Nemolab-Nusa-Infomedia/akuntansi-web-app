@@ -8,6 +8,7 @@ import router from "./router";
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
+
 const app = createApp(App);
 
 app
