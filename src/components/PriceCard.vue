@@ -65,27 +65,36 @@ const financialPrices = [
   <div
     v-for="(item, index) in financialPrices"
     :key="index"
-    style="box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);"
-    class="bg-white rounded-3xl border-2 border-[#D0D0D3] flex-1 p-8 hover:border-primary"
+    style="
+      box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12),
+        0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+    "
+    class="bg-white rounded-3xl border-2 border-[#D0D0D3] flex-1 p-8 max-lg:p-4 hover:border-primary"
   >
-    <div class="space-y-6">
+    <div class="space-y-6 max-lg:space-y-2 max-lg:w-[250px]">
       <div class="flex justify-between items-center">
-        <p class="text-4xl font-bold">{{ item.category }}</p>
+        <p class="text-4xl font-bold max-lg:text-base">{{ item.category }}</p>
         <span
           v-if="item.isPopular"
-          class="bg-[#F44336] text-white text-lg font-semibold rounded-lg px-10 py-3"
+          class="bg-[#F44336] text-white text-lg max-lg:text-xs font-semibold rounded-lg px-10 max-lg:py-1 max-lg:px-4 py-3"
         >
           Populer
         </span>
       </div>
-      <p class="text-5xl font-bold">
+      <p class="text-5xl max-lg:text-xl font-bold">
         <span>Rp</span>{{ item.price[activeBillingCycle] }}
-        <span class="text-2xl font-normal">/ {{ activeBillingCycle }}</span>
+        <span class="text-2xl font-normal max-lg:text-base"
+          >/ {{ activeBillingCycle }}</span
+        >
       </p>
-      <p class="text-2xl leading-10 text-[#73727A]">{{ item.description }}</p>
+      <p class="text-2xl md:leading-10 text-[#73727A] max-lg:text-xl">
+        {{ item.description }}
+      </p>
     </div>
-    <hr class="border-t-2 border-dashed border-gray-300 my-11 w-full" />
-    <div class="text-2xl mb-11">
+    <hr
+      class="border-t-2 border-dashed border-gray-300 my-11 max-lg:my-4 w-full"
+    />
+    <div class="max-lg:text-base text-2xl mb-11">
       <p class="text-[#45434D] mb-3">
         Fitur Utama Paket <span>{{ item.category }}</span>
       </p>
@@ -97,8 +106,7 @@ const financialPrices = [
         <div class="w-[15%]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
+            class="w-10 h-10 max-lg:w-5 max-lg:h-5"
             viewBox="0 0 40 40"
             fill="none"
           >
@@ -122,7 +130,7 @@ const financialPrices = [
       </div>
     </div>
     <button
-      class="bg-secondary text-3xl rounded-2xl px-8 py-4 w-full text-white"
+      class="bg-secondary text-3xl max-lg:text-sm rounded-2xl text-center md:px-8 py-4 w-full text-white"
     >
       Langganan Sekarang
     </button>

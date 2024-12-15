@@ -3,7 +3,7 @@
     <div v-for="(item, index) in accordionItems" :key="index">
       <h2
         :id="'accordion-flush-heading-' + index"
-        class="border-b py-8 border-[#FFC055]"
+        class="border-b py-8 max-lg:py-3 border-[#FFC055]"
       >
         <button
           type="button"
@@ -29,7 +29,10 @@
                 fill="#F44336"
               />
             </svg>
-            <span class="text-primary text-3xl">{{ item.title }}</span>
+            <span
+              class="text-primary max-lg:text-start text-3xl max-lg:text-lg"
+              >{{ item.title }}</span
+            >
           </span>
         </button>
         <div
@@ -38,7 +41,9 @@
           :aria-labelledby="'accordion-flush-heading-' + index"
         >
           <div class="pt-3">
-            <p class="ps-12 text-[#73727A] text-2xl">
+            <p
+              class="ps-12 max-lg:ps-9 text-[#73727A] text-2xl max-lg:text-base"
+            >
               {{ item.content }}
             </p>
           </div>
@@ -68,8 +73,7 @@ const accordionItems = ref([
       "Data Anda dilindungi dengan enkripsi end-to-end, akses berbasis peran, dan audit trail yang lengkap.",
   },
   {
-    title:
-      "Bisakah saya mengintegrasikan Core Jurnal dengan software lain yang saya gunakan?",
+    title:"Bisakah saya mengintegrasikan Core Jurnal dengan software lain yang saya gunakan?",
     content:
       "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.",
   },
@@ -79,8 +83,7 @@ const accordionItems = ref([
       "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.",
   },
   {
-    title:
-      "Bagaimana jika saya membutuhkan fitur yang tidak tersedia di paket saya?",
+    title:"Bagaimana jika saya membutuhkan fitur yang tidak tersedia di paket saya?",
     content:
       "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.",
   },
@@ -90,8 +93,7 @@ const accordionItems = ref([
       "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.",
   },
   {
-    title:
-      "Bagaimana proses pembayaran dan berapa lama kontrak yang tersedia di Core Jurnal?",
+    title:"Bagaimana proses pembayaran dan berapa lama kontrak yang tersedia di Core Jurnal?",
     content:
       "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.",
   },

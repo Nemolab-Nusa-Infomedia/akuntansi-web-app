@@ -2,8 +2,11 @@
 import FeaturesCard from "../components/FeatureCard.vue";
 import StatsCard from "../components/StatCard.vue";
 import RecommendationsCard from "../components/RecommendationCard.vue";
+import RecommendationsCardResponsive from "../components/RecommendationCardResponsive.vue";
 import PricesCard from "../components/PriceCard.vue";
+import PricesCardResponsive from "../components/PriceCardResponsive.vue";
 import QuestionAccordions from "@/components/QuestionAccordion.vue";
+import ContactForm from "@/components/ContactForm.vue";
 import { ref } from "vue";
 
 const activeButton = ref("tahun");
@@ -138,9 +141,9 @@ const activeButton = ref("tahun");
       </div>
     </div>
     <!-- recommendation -->
-    <div class="py-20 max-lg:py-6 space-y-14 px-28 max-lg:px-8 w-full">
-      <div class="text-center space-y-4">
-        <h1 class="text-primary text-5xl font-bold">
+    <div class="py-20 max-lg:py-6 space-y-14 w-full">
+      <div class="text-center space-y-4  px-28 max-lg:px-8 ">
+        <h1 class="text-primary text-5xl max-lg:text-2xl font-bold">
           Apa Kata Pengguna Tentang Kami
         </h1>
         <p class="text-2xl max-lg:text-base">
@@ -149,16 +152,23 @@ const activeButton = ref("tahun");
           memberikan solusi terbaik bagi Anda
         </p>
       </div>
-      <div class="flex justify-between gap-10 items-stretch">
+      <div class="flex justify-between gap-10 max-lg:hidden items-stretch">
         <RecommendationsCard />
+      </div>
+      <div class="justify-between gap-10 hidden max-lg:block items-stretch">
+        <RecommendationsCardResponsive />
       </div>
     </div>
     <!-- price -->
-    <div class="py-20 max-lg:py-6 space-y-20 px-28 max-lg:px-8 w-full">
-      <div class="text-center space-y-16">
-        <h1 class="text-primary text-5xl font-bold">Penawaran Harga Kami</h1>
+    <div
+      class="py-20 max-lg:py-6 space-y-20 max-lg:space-y-6  w-full"
+    >
+      <div class="text-center px-28 max-lg:px-8 space-y-16 max-lg:space-y-5">
+        <h1 class="text-primary text-5xl font-bold max-lg:text-2xl">
+          Penawaran Harga Kami
+        </h1>
         <div
-          class="flex items-center justify-center text-xl font-semibold mx-auto w-[330px] bg-gray-200 rounded-full"
+          class="flex items-center justify-center max-lg:text-base max-lg:w-[230px] text-xl font-semibold mx-auto w-[330px] bg-gray-200 rounded-full"
         >
           <button
             @click="activeButton = 'tahun'"
@@ -166,7 +176,7 @@ const activeButton = ref("tahun");
               'bg-[#F44336] text-white': activeButton === 'tahun',
               'bg-transparent text-gray-700': activeButton !== 'tahun',
             }"
-            class="px-12 py-4 rounded-full transition"
+            class="px-12 py-4 max-lg:px-7 rounded-full transition"
           >
             Tahunan
           </button>
@@ -176,19 +186,26 @@ const activeButton = ref("tahun");
               'bg-primary text-white': activeButton === 'bulan',
               'bg-transparent text-gray-700': activeButton !== 'bulan',
             }"
-            class="px-12 py-4 rounded-full transition"
+            class="px-12 py-4 max-lg:px-7 rounded-full transition"
           >
             Bulanan
           </button>
         </div>
       </div>
-      <div class="flex gap-10 items-stretch">
+      <div
+        class="flex gap-10 px-28 max-lg:hidden items-stretch max-lg:py-4"
+      >
         <PricesCard :activeBillingCycle="activeButton" />
+      </div>
+      <div
+        class="items-stretch hidden max-lg:block max-lg:py-4"
+      >
+        <PricesCardResponsive :activeBillingCycle="activeButton" />
       </div>
       <div class="flex justify-center">
         <router-link
           to="/"
-          class="text-primary text-3xl gap-4 font-semibold flex justify-between items-center"
+          class="text-primary text-3xl max-lg:text-base gap-4 font-semibold flex justify-between items-center"
           >Lihat Selengkapnya
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -209,18 +226,26 @@ const activeButton = ref("tahun");
       </div>
     </div>
     <!-- question -->
-    <div class="py-20 max-lg:py-6 space-y-20 px-28 max-lg:px-8 w-full">
+    <div
+      class="py-20 max-lg:py-6 max-lg:space-y-6 space-y-20 px-28 max-lg:px-8 w-full"
+    >
       <div class="text-center space-y-4">
-        <h1 class="text-primary text-5xl font-bold">Frequently Ask Question</h1>
+        <h1 class="text-primary text-5xl font-bold max-lg:text-2xl">
+          Frequently Ask Question
+        </h1>
       </div>
       <div>
         <QuestionAccordions />
       </div>
     </div>
     <!-- contact us -->
-    <div class="py-20 max-lg:py-6 space-y-20 px-28 max-lg:px-8 w-full">
+    <div
+      class="py-20 max-lg:py-6 space-y-20 max-lg:space-y-6 px-28 max-lg:px-8 w-full"
+    >
       <div class="space-y-10">
-        <h1 class="text-primary text-5xl font-bold leading-[70px]">
+        <h1
+          class="text-primary text-5xl max-lg:text-2xl font-bold leading-[70px]"
+        >
           Siap mengoptimalkan pengelolaan keuangan <br />
           Anda dengan Core Jurnal?
         </h1>
@@ -230,10 +255,10 @@ const activeButton = ref("tahun");
           Mulailah perjalanan menuju efisiensi keuangan sekarang juga!
         </p>
       </div>
-      <div class="flex justify-between items-center">
-        <img src="/assets/contact.png" alt="" />
-        <div>
-         <!-- <ContactForm /> -->
+      <div class="flex max-lg:block md:justify-between gap-10 items-center">
+        <img class="md:w-1/2" src="/assets/contact.png" alt="" />
+        <div class="md:w-1/2">
+          <ContactForm />
         </div>
       </div>
     </div>
