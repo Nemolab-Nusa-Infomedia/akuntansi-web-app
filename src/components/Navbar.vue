@@ -102,7 +102,7 @@
         </li>
         <li>
           <a
-            href="/blog"
+            href="/harga"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
               'text-red-500': activeMenu === 'Harga',

@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import InputField from "../components/InputField.vue";
 </script>
 <template>

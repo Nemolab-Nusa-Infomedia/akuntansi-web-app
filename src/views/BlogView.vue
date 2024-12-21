@@ -1,3 +1,12 @@
+<script setup>
+// export default {
+//   data() {
+//     return {
+//       searchQuery: "", // Untuk mengikat input dengan Vue.js
+//     };
+//   },
+// };
+</script>
 <template>
   <div class="relative">
     <img src="/assets/img-blog.png" class="-z-10" alt="" />
@@ -88,12 +97,4 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      searchQuery: "", // Untuk mengikat input dengan Vue.js
-    };
-  },
-};
-</script>
+
