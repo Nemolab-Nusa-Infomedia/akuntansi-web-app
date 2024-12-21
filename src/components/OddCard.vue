@@ -94,7 +94,7 @@ const OddCard = [
       <hr
         class="border-t-2 border-dashed border-gray-300 my-5 max-lg:my-4 w-full"
       />
-      <div class="max-lg:text-base text-3xl flex mb-5 justify-between items-center">
+      <div class="max-lg:text-lg text-3xl flex mb-5 justify-between items-center">
         <p class="text-[#F44336]">
           Rp<span>{{ item.price }}</span>
         </p>
