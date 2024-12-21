@@ -8,14 +8,14 @@ const activeButton = ref("tahun");
 </script>
 <template>
   <div class="flex justify-center w-full">
-    <div class="py-28">
+    <div class="py-28 max-lg:py-8 w-full">
       <div class="text-center px-28 max-lg:px-8 space-y-16 max-lg:space-y-5">
-        <div class="space-y-8 justify-center">
+        <div class="space-y-8">
           <h1 class="text-primary text-5xl font-bold max-lg:text-2xl">
             Raih Software Akuntansi Terbaik Dengan Mudah
           </h1>
           <div class="flex justify-center">
-            <p class="text-2xl text-[#45434D] w-[1280px]">
+            <p class="text-2xl text-[#45434D] max-lg:text-lg w-[1280px] max-lg:w-full">
               Semua kebutuhan Anda, mulai dari invoicing, purchasing, inventori,
               dan manajemen aset tetap, hingga laporan akuntansi dan analisis
               bisnis, tersedia di satu tempat
@@ -57,13 +57,13 @@ const activeButton = ref("tahun");
       </div>
     </div>
   </div>
-  <div class="py-20 space-y-20 px-28">
-    <div class="space-y-8 justify-center text-center">
+  <div class="py-20 space-y-20 px-28 max-lg:py-6 max-lg:space-y-6 max-lg:px-8">
+    <div class="space-y-8 max-lg:space-y-4 justify-center text-center">
       <h1 class="text-primary text-5xl font-semibold max-lg:text-2xl">
         Add Ons
       </h1>
       <div class="flex justify-center">
-        <p class="text-2xl text-[#45434D] w-[1293px]">
+        <p class="text-2xl text-[#45434D] w-[1293px] max-lg:text-lg max-lg:w-full">
           Sempurnakan akun Anda dengan fitur dan fungsionalitas tambahan sesuai
           kebutuhan untuk mendukung kemudahan dalam bisnis Anda
         </p>
