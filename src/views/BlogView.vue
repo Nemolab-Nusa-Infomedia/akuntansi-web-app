@@ -22,6 +22,26 @@ import BlogView from "@/components/BlogCard.vue";
           Menjelajah Setiap Aspek Keuangan Lewat Insight yang Komprehensif di
           Core Jurnal Blog
         </p>
+        <a
+          href=""
+          class="bg-secondary px-6 w-[262.28px] hidden max-lg:flex rounded-xl py-3  justify-between items-center text-2xl max-lg:text-lg max-lg:w-[200px] text-white"
+          >Learn More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="29"
+            viewBox="0 0 30 29"
+            fill="none"
+          >
+            <path
+              d="M11.24 8.05615L18.44 15.2562L11.24 22.4562"
+              stroke="white"
+              stroke-width="1.728"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
         <div class="flex justify-center max-lg:hidden items-center">
           <div class="relative flex items-center w-full max-w-3xl">
             <!-- Icon Search -->

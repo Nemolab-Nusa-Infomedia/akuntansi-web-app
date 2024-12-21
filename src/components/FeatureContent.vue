@@ -1,0 +1,70 @@
+<template>
+  <div>
+    <div
+      v-for="(item, index) in items"
+      :key="index"
+      class="md:flex md:justify-between  gap-7 items-center"
+      :class="{
+        'flex-row-reverse': index % 2 !== 0,
+      }"
+    >
+      <img
+        :src="item.image"
+        class="rounded-lg w-[836px] h-[630px]"
+        :alt="item.title"
+      />
+      <div class="gap-6 block space-y-6">
+        <h2 class="text-primary text-5xl font-bold">{{ item.title }}</h2>
+        <p class="text-[#45434D] text-2xl">{{ item.description }}</p>
+        <a
+          :href="item.link"
+          class="bg-secondary px-6 w-[330px] flex rounded-xl py-3 justify-between items-center text-2xl max-lg:text-lg max-lg:w-[200px] text-white"
+        >
+          Whatsapp Sekarang
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="29"
+            viewBox="0 0 30 29"
+            fill="none"
+          >
+            <path
+              d="M11.24 8.05615L18.44 15.2562L11.24 22.4562"
+              stroke="white"
+              stroke-width="1.728"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const items = ref([
+  {
+    image: "assets/fitur.png",
+    title: "Real Time Update",
+    description:
+      "Status invoice transaksi akan diperbarui secara otomatis untuk mencerminkan informasi terkini tentang pembayaran dan pemrosesan. Ini memastikan Anda selalu mendapatkan data yang akurat tanpa perlu memantau secara manual. Dengan pembaruan real-time, Anda dapat mengelola keuangan dengan lebih efisien dan tanpa kesalahan.",
+    link: "https://wa.me/123456789",
+  },
+  {
+    image: "assets/fitur.png",
+    title: "Beragam Template Tersedia",
+    description: "Membuat invoice menjadi sangat mudah dengan menggunakan stok template yang tersedia. Template ini dirancang untuk memudahkan pembuatan faktur yang profesional dan konsisten tanpa perlu memulai dari awal. Cukup pilih template yang sesuai, isi rincian yang diperlukan, dan invoice siap untuk dikirim.",
+    link: "https://wa.me/987654321",
+  },
+  {
+    image: "assets/fitur.png",
+    title: "Tagihan Tercatat Otomatis",
+    description: "Dengan sistem kami, tidak ada tagihan yang akan terlewat. Semua transaksi dan invoice tercatat secara otomatis dan dikelola dengan efisien, memastikan bahwa setiap tagihan diperhatikan dan tidak ada yang terlewatkan. Ini membantu Anda menjaga arus kas dan memastikan semua pembayaran ditangani tepat waktu.",
+    link: "https://wa.me/1122334455",
+  },
+  // Tambahkan lebih banyak item sesuai kebutuhan
+]);
+</script>

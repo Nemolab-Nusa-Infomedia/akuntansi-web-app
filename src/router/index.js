@@ -4,6 +4,7 @@ import LoginView from "../views/LoginView.vue";
 import SignupView from "../views/SignupView.vue";
 import BlogView from "../views/BlogView.vue";
 import HargaView from "@/views/HargaView.vue";
+import FiturView from "@/views/FiturView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,11 @@ const router = createRouter({
       name: "harga",
       component: HargaView,
     },
+    {
+      path: "/fitur",
+      name: 'fitur',
+      component: FiturView,
+    }
   ],
 });
 

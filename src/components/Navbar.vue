@@ -1,8 +1,6 @@
 <template>
   <nav class="bg-white w-full text-2xl max-lg:text-base max-lg:px-8 px-28 py-8">
     <div class="flex items-center justify-between">
-      <!-- Logo -->
-
       <div class="max-lg:flex max-lg:gap-4">
         <button
           class="sm:hidden focus:outline-none"
@@ -50,13 +48,13 @@
         </li>
         <li>
           <a
-            href="#"
+            href="/fitur"
             :class="{
               ' py-2 px-4 rounded items-center flex justify-between gap-2 sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'About',
-              'hover:bg-blue-700': activeMenu !== 'About',
+              'text-red-500': activeMenu === 'Fitur',
+              'hover:bg-blue-700': activeMenu !== 'Fitur',
             }"
-            @click="setActive('About')"
+            @click="setActive('Fitur')"
           >
             Fitur
             <svg
