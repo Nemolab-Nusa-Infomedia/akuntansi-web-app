@@ -81,12 +81,12 @@ const OddCard = [
   >
     <div class="space-y-5 max-lg:space-y-2 h-4/6 max-lg:w-[250px]">
       <div class="flex justify-between items-center">
-        <p class="text-3xl font-bold max-lg:text-base flex items-center gap-4">
-          <span class="items-center flex gap-1" v-html="item.icon"></span>
+        <p class="text-3xl font-bold max-lg:text-lg flex items-center max-lg:gap-2 gap-4">
+          <span class="items-center flex gap-1 max-lg:w-6" v-html="item.icon"></span>
           {{ item.category }}
         </p>
       </div>
-      <p class="text-xl text-[#73727A] max-lg:text-lg">
+      <p class="text-xl text-[#73727A] max-lg:text-base">
         {{ item.description }}
       </p>
     </div>
