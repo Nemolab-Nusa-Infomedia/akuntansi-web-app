@@ -102,7 +102,7 @@
         </li>
         <li>
           <a
-            href=""
+            href="/blog"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
               'text-red-500': activeMenu === 'Harga',
@@ -115,13 +115,13 @@
         </li>
         <li>
           <a
-            href="/"
+            href="/blog"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'Blog',
-              'hover:bg-blue-700': activeMenu !== 'Blog',
+              'text-red-500': activeMenu === 'blog',
+              'hover:bg-blue-700': activeMenu !== 'blog',
             }"
-            @click="setActive('Blog')"
+            @click="setActive('blog')"
           >
             Blog
           </a>

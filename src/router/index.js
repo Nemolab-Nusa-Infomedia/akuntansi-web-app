@@ -1,27 +1,33 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import LoginView from '../views/LoginView.vue';
-import SignupView from '../views/SignupView.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import LoginView from "../views/LoginView.vue";
+import SignupView from "../views/SignupView.vue";
+import BlogView from "../views/BlogView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: "/",
+      name: "home",
       component: HomeView,
     },
     {
-      path: '/login',
-      name: 'login',
+      path: "/login",
+      name: "login",
       component: LoginView,
-      meta: { noNavbarFooter: true }, // Tambahkan meta
+      meta: { noNavbarFooter: true },
     },
     {
-      path: '/signup',
-      name: 'signup',
+      path: "/signup",
+      name: "signup",
       component: SignupView,
-      meta: { noNavbarFooter: true }, // Tambahkan meta
+      meta: { noNavbarFooter: true },
+    },
+    {
+      path: "/blog",
+      name: "blog",
+      component: BlogView,
     },
   ],
 });
