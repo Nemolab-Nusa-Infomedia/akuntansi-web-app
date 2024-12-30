@@ -1,24 +1,27 @@
 <template>
-  <div class="py-20 bg-primary space-y-20">
-    <div class="text-center">
-      <h1 class="text-white text-5xl font-semibold mb-5">
+  <div class="py-20 max-lg:py-5 bg-primary space-y-20 max-lg:space-y-5">
+    <div class="text-center max-lg:px-8">
+      <h1
+        class="text-white max-lg:text-lg text-5xl font-semibold mb-5 max-lg:mb-3"
+      >
         Saatnya #NikmatiPerkembanganCoreJurnal!
       </h1>
       <div class="flex justify-center">
-        <p class="text-white text-2xl w-[1500px]">
+        <p class="text-white text-2xl max-lg:text-base w-[1500px]">
           Saatnya #NikmatiPerkembanganCoreJurnal! Rasakan kemudahan dan
           efisiensi baru dalam pengelolaan keuangan dengan fitur terbaru yang
           memudahkan pencatatan dan pelaporan keuangan.
         </p>
       </div>
     </div>
-    <div class="flex justify-between px-28 gap-20 max-lg:px-8 items-center">
-      <div class="bg-white rounded-3xl p-7 space-y-7">
-        <div class="flex items-center gap-4">
+    <div
+      class="md:flex md:justify-between px-28 gap-20 max-lg:space-y-5 max-lg:px-8 items-center"
+    >
+      <div class="bg-white rounded-3xl p-7 space-y-7 max-lg:p-5 max-lg:space-y-3">
+        <div class="flex items-center gap-4 max-lg:gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="57"
-            height="57"
+            class="w-14 max-lg:w-8"
             viewBox="0 0 57 57"
             fill="none"
           >
@@ -29,17 +32,17 @@
               fill="#536DFE"
             />
           </svg>
-          <h1 class="text-black text-3xl font-bold">
+          <h1 class="text-black text-3xl max-lg:text-lg font-bold">
             Coba Core Jurnal, Gratis!
           </h1>
         </div>
-        <p class="text-[#425466] text-2xl">
+        <p class="text-[#425466] text-2xl max-lg:text-base">
           Tambahkan berbagai metode pembayaran untuk mempermudah proses
           transaksi dan memberikan fleksibilitas kepada pelanggan.
         </p>
         <a
           href=""
-          class="bg-[#F44336] px-6 w-[358.28px] flex rounded-xl py-3 justify-between items-center text-2xl max-lg:text-lg max-lg:w-[200px] text-white"
+          class="bg-[#F44336] px-6 max-lg:px-3 w-[358.28px] flex rounded-xl py-3 justify-between items-center text-2xl max-lg:text-base max-lg:w-[230px] text-white"
           >Coba Gratis Sekarang
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,12 +61,11 @@
           </svg>
         </a>
       </div>
-      <div class="bg-white rounded-3xl p-7 space-y-7">
-        <div class="flex items-center gap-4">
+      <div class="bg-white rounded-3xl max-lg:p-5 p-7 max-lg:space-y-3 space-y-7">
+        <div class="flex items-center gap-4 max-lg:gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="57"
-            height="57"
+            class="w-14 max-lg:w-8"
             viewBox="0 0 57 57"
             fill="none"
           >
@@ -72,15 +74,15 @@
               fill="#536DFE"
             />
           </svg>
-          <h1 class="text-black text-3xl font-bold">Hubungi Administrator</h1>
+          <h1 class="text-black text-3xl font-bold max-lg:text-lg">Hubungi Administrator</h1>
         </div>
-        <p class="text-[#425466] text-2xl">
+        <p class="text-[#425466] text-2xl max-lg:text-base">
           Tambahkan berbagai metode pembayaran untuk mempermudah proses
           transaksi dan memberikan fleksibilitas kepada pelanggan.
         </p>
         <a
           href=""
-          class="bg-secondary px-6 w-[358.28px] flex rounded-xl py-3 justify-between items-center text-2xl max-lg:text-lg max-lg:w-[200px] text-white"
+          class="bg-secondary px-6 w-[358.28px] max-lg:px-3 flex rounded-xl py-3 justify-between items-center text-2xl max-lg:text-base max-lg:w-[230px] text-white"
           >Whatsapp Sekarang
           <svg
             xmlns="http://www.w3.org/2000/svg"

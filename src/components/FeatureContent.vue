@@ -3,22 +3,27 @@
     <div
       v-for="(item, index) in items"
       :key="index"
-      class="md:flex md:justify-between  gap-7 items-center"
+      class="md:flex md:justify-between max-lg:mb-8 gap-7 items-center"
       :class="{
         'flex-row-reverse': index % 2 !== 0,
       }"
     >
       <img
         :src="item.image"
-        class="rounded-lg w-[836px] h-[630px]"
+        class="rounded-lg w-[836px] max-lg:w-screen max-lg:mb-2 h-[630px] max-lg:h-[250px]"
         :alt="item.title"
       />
-      <div class="gap-6 block space-y-6">
-        <h2 class="text-primary text-5xl font-bold">{{ item.title }}</h2>
-        <p class="text-[#45434D] text-2xl">{{ item.description }}</p>
+      <div class="gap-6 block space-y-6 max-lg:space-y-3">
+        <h2 class="text-primary max-lg:text-center text-5xl font-bold max-lg:text-2xl">
+          {{ item.title }}
+        </h2>
+        <p class="text-[#45434D] max-lg:text-balance max-lg:text-justify text-2xl max-lg:text-lg">
+          {{ item.description }}
+        </p>
+        <div class="max-lg:flex max-lg:justify-center">
         <a
           :href="item.link"
-          class="bg-secondary px-6 w-[330px] flex rounded-xl py-3 justify-between items-center text-2xl max-lg:text-lg max-lg:w-[200px] text-white"
+          class="bg-secondary px-6 w-[330px] flex rounded-xl max-lg:px-3 py-3 justify-between items-center text-2xl max-lg:text-base max-lg:w-[210px] text-white"
         >
           Whatsapp Sekarang
           <svg
@@ -38,6 +43,7 @@
           </svg>
         </a>
       </div>
+      </div>
     </div>
   </div>
 </template>
@@ -56,13 +62,15 @@ const items = ref([
   {
     image: "assets/fitur.png",
     title: "Beragam Template Tersedia",
-    description: "Membuat invoice menjadi sangat mudah dengan menggunakan stok template yang tersedia. Template ini dirancang untuk memudahkan pembuatan faktur yang profesional dan konsisten tanpa perlu memulai dari awal. Cukup pilih template yang sesuai, isi rincian yang diperlukan, dan invoice siap untuk dikirim.",
+    description:
+      "Membuat invoice menjadi sangat mudah dengan menggunakan stok template yang tersedia. Template ini dirancang untuk memudahkan pembuatan faktur yang profesional dan konsisten tanpa perlu memulai dari awal. Cukup pilih template yang sesuai, isi rincian yang diperlukan, dan invoice siap untuk dikirim.",
     link: "https://wa.me/987654321",
   },
   {
     image: "assets/fitur.png",
     title: "Tagihan Tercatat Otomatis",
-    description: "Dengan sistem kami, tidak ada tagihan yang akan terlewat. Semua transaksi dan invoice tercatat secara otomatis dan dikelola dengan efisien, memastikan bahwa setiap tagihan diperhatikan dan tidak ada yang terlewatkan. Ini membantu Anda menjaga arus kas dan memastikan semua pembayaran ditangani tepat waktu.",
+    description:
+      "Dengan sistem kami, tidak ada tagihan yang akan terlewat. Semua transaksi dan invoice tercatat secara otomatis dan dikelola dengan efisien, memastikan bahwa setiap tagihan diperhatikan dan tidak ada yang terlewatkan. Ini membantu Anda menjaga arus kas dan memastikan semua pembayaran ditangani tepat waktu.",
     link: "https://wa.me/1122334455",
   },
   // Tambahkan lebih banyak item sesuai kebutuhan

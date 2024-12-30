@@ -48,13 +48,13 @@
         </li>
         <li>
           <a
-            href="/fitur"
+            href="/feature"
             :class="{
               ' py-2 px-4 rounded items-center flex justify-between gap-2 sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'Fitur',
-              'hover:bg-blue-700': activeMenu !== 'Fitur',
+              'text-red-500': activeMenu === 'Feature',
+              'hover:bg-blue-700': activeMenu !== 'Feature',
             }"
-            @click="setActive('Fitur')"
+            @click="setActive('Feature')"
           >
             Fitur
             <svg
@@ -74,13 +74,13 @@
         </li>
         <li>
           <a
-            href="#"
+            href="/solution"
             :class="{
               'py-2 px-4 flex justify-between gap-2 items-center rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'Services',
-              'hover:bg-blue-700': activeMenu !== 'Services',
+              'text-red-500': activeMenu === 'Solution',
+              'hover:bg-blue-700': activeMenu !== 'Solution',
             }"
-            @click="setActive('Services')"
+            @click="setActive('Solution')"
           >
             Solusi
             <svg

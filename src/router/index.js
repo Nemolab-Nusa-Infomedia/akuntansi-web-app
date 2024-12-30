@@ -4,7 +4,8 @@ import LoginView from "../views/LoginView.vue";
 import SignupView from "../views/SignupView.vue";
 import BlogView from "../views/BlogView.vue";
 import HargaView from "@/views/HargaView.vue";
-import FiturView from "@/views/FiturView.vue";
+import FeatureView from "@/views/FeatureView.vue";
+import SolutionView from "@/views/SolutionView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,9 +38,14 @@ const router = createRouter({
       component: HargaView,
     },
     {
-      path: "/fitur",
-      name: 'fitur',
-      component: FiturView,
+      path: "/feature",
+      name: 'feature',
+      component: FeatureView,
+    },
+    {
+      path:"/solution",
+      name: "solution",
+      component: SolutionView,
     }
   ],
 });
