@@ -17,6 +17,10 @@ import MonthlyProfitView from "@/views/feature/perencanaan-dan-analisa-keuangan/
 import ManagementAnggaranView from "@/views/feature/perencanaan-dan-analisa-keuangan/ManagementAnggaranView.vue";
 import CustomAnalyctycsView from "@/views/feature/perencanaan-dan-analisa-keuangan/CustomAnalyctycsView.vue";
 import LaporanProfitabilitasView from "@/views/feature/perencanaan-dan-analisa-keuangan/LaporanProfitabilitasView.vue";
+import IntegrationView from "@/views/feature/integrasi-dan-platform/IntegrationView.vue";
+import HRISView from "@/views/feature/integrasi-dan-platform/HRISView.vue";
+import POSSystemView from "@/views/feature/integrasi-dan-platform/POSSystemView.vue";
+import PayrollView from "@/views/feature/integrasi-dan-platform/PayrollView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,64 +54,84 @@ const router = createRouter({
     },
     {
       path: "/feature/akuntansi/invoice",
-      name: 'invoice',
+      name: "invoice",
       component: InvoiceView,
     },
     {
       path: "/feature/akuntansi/biaya",
-      name: 'biaya',
+      name: "biaya",
       component: BiayaView,
     },
     {
       path: "/feature/akuntansi/laporan",
-      name: 'laporan',
+      name: "laporan",
       component: LaporanView,
     },
     {
       path: "/feature/akuntansi/asset",
-      name: 'asset',
+      name: "asset",
       component: AssetView,
     },
     {
       path: "/feature/akuntansi/akuntansi",
-      name: 'akuntansi',
+      name: "akuntansi",
       component: AkuntansiView,
     },
     {
       path: "/feature/supply-chain-management/inventory",
-      name: 'inventory',
+      name: "inventory",
       component: InventoryView,
     },
     {
       path: "/feature/supply-chain-management/manufaktur",
-      name: 'manufaktur',
+      name: "manufaktur",
       component: ManufakturView,
     },
     {
       path: "/feature/perencanaan-dan-analisa-keuangan/monthly-profit",
-      name: 'monthly-profit',
+      name: "monthly-profit",
       component: MonthlyProfitView,
     },
     {
       path: "/feature/perencanaan-dan-analisa-keuangan/management-anggaran",
-      name: 'management-anggaran',
+      name: "management-anggaran",
       component: ManagementAnggaranView,
     },
     {
       path: "/feature/perencanaan-dan-analisa-keuangan/custom-analyctycs",
-      name: 'custom-analyctycs',
+      name: "custom-analyctycs",
       component: CustomAnalyctycsView,
     },
     {
       path: "/feature/perencanaan-dan-analisa-keuangan/laporan-profitabilitas",
-      name: 'laporan-profitabilitas',
+      name: "laporan-profitabilitas",
       component: LaporanProfitabilitasView,
     },
     {
-      path:"/solution",
+      path: "/feature/integrasi-dan-platform/integrasi",
+      name: "integrasi",
+      component: IntegrationView,
+    },
+    {
+      path: "/feature/integrasi-dan-platform/HRIS",
+      name: "HRIS",
+      component: HRISView,
+    },
+    {
+      path: "/feature/integrasi-dan-platform/POS-system",
+      name: "POS-system",
+      component: POSSystemView,
+    },
+    {
+      path: "/feature/integrasi-dan-platform/payroll",
+      name: "payroll",
+      component: PayrollView,
+    },
+    {
+      path: "/solution",
       name: "solution",
       component: SolutionView,
-    }
+    },
   ],
 });
 

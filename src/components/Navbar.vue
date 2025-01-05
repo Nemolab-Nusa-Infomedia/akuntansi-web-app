@@ -474,105 +474,125 @@
                 </div>
                 <div v-if="activeMenuFeature === 'menu4'" class="menu">
                   <ul class="grid grid-cols-3 gap-6">
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/integrasi-dan-platform/integrasi"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Integrasi</h4>
-                        <p class="text-gray-600 text-lg">
-                          Menghubungkan berbagai sistem untuk memastikan alur
-                          data yang mulus.
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Integrasi</h4>
+                          <p class="text-gray-600 text-lg">
+                            Menghubungkan berbagai sistem untuk memastikan alur
+                            data yang mulus.
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/integrasi-dan-platform/HRIS"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">HRIS</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola data karyawan, absensi, dan administrasi SDM
-                          dalam satu platform
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">HRIS</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola data karyawan, absensi, dan administrasi
+                            SDM dalam satu platform
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/integrasi-dan-platform/payroll"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Payroll</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengotomatiskan penggajian karyawan dengan perhitungan
-                          yang akurat dan tepat waktu
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Payroll</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengotomatiskan penggajian karyawan dengan
+                            perhitungan yang akurat dan tepat waktu
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/integrasi-dan-platform/POS-system"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">POS System</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola transaksi penjualan secara efisien dengan
-                          pencatatan stok otomatis
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">POS System</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola transaksi penjualan secara efisien dengan
+                            pencatatan stok otomatis
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
