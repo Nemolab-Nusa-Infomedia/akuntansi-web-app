@@ -38,10 +38,10 @@
             href="/"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'Home',
-              'hover:bg-blue-700': activeMenu !== 'Home',
+              'text-red-500': activeMenu === 'tab1',
+              'hover:bg-blue-700': activeMenu !== 'tab1',
             }"
-            @click="setActive('Home')"
+            @click="setActive('tab1')"
           >
             Beranda
           </a>
@@ -124,296 +124,351 @@
               <div id="column-2" class="w-9/12 pt-4">
                 <div v-if="activeMenuFeature === 'menu1'" class="menu">
                   <ul class="grid grid-cols-3 gap-6">
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/akuntansi/invoice"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Invoice</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola tagihan dan pembayaran secara efisien dengan
-                          fitur otomatisasi.
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Invoice</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola tagihan dan pembayaran secara efisien
+                            dengan fitur otomatisasi.
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/akuntansi/biaya"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Biaya</h4>
-                        <p class="text-gray-600 text-lg">
-                          Merekam dan memantau pengeluaran perusahaan dengan
-                          akurat.
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Biaya</h4>
+                          <p class="text-gray-600 text-lg">
+                            Merekam dan memantau pengeluaran perusahaan dengan
+                            akurat.
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/akuntansi/laporan"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Laporan</h4>
-                        <p class="text-gray-600 text-lg">
-                          Menyediakan laporan keuangan real-time untuk analisis
-                          bisnis yang mendalam.
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Laporan</h4>
+                          <p class="text-gray-600 text-lg">
+                            Menyediakan laporan keuangan real-time untuk
+                            analisis bisnis yang mendalam.
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        class="flex-shrink-0 flex"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/akuntansi/asset"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Aset Tetap</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola aset tetap perusahaan dengan pelacakan yang
-                          terorganisir.
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          class="flex-shrink-0 flex"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Aset Tetap</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola aset tetap perusahaan dengan pelacakan
+                            yang terorganisir.
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/akuntansi/akuntansi"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Akuntansi</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengotomatiskan proses pembukuan dan rekonsiliasi
-                          keuangan perusahaan
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Akuntansi</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengotomatiskan proses pembukuan dan rekonsiliasi
+                            keuangan perusahaan
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div v-if="activeMenuFeature === 'menu2'" class="menu">
                   <ul class="grid grid-cols-3 gap-6">
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/supply-chain-management/inventory"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Inventori</h4>
-                        <p class="text-gray-600 text-lg">
-                          Melacak stok barang secara real-time untuk manajemen
-                          persediaan yang optimal
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Inventori</h4>
+                          <p class="text-gray-600 text-lg">
+                            Melacak stok barang secara real-time untuk manajemen
+                            persediaan yang optimal
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/supply-chain-management/manufaktur"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Manufakttur</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengatur proses produksi dengan alur kerja yang
-                          terintegrasi dan efisien
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Manufaktur</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengatur proses produksi dengan alur kerja yang
+                            terintegrasi dan efisien
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div v-if="activeMenuFeature === 'menu3'" class="menu">
                   <ul class="grid grid-cols-3 gap-6">
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/perencanaan-dan-analisa-keuangan/management-anggaran"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">
-                          Management Anggaran
-                        </h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola anggaran perusahaan untuk pengendalian biaya
-                          yang efektif
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Management Anggaran
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola anggaran perusahaan untuk pengendalian
+                            biaya yang efektif
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/perencanaan-dan-analisa-keuangan/monthly-profit"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">
-                          Monthly Profit and Loss
-                        </h4>
-                        <p class="text-gray-600 text-lg">
-                          Menganalisis laba rugi bulanan untuk evaluasi kinerja
-                          keuangan
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Monthly Profit and Loss
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Menganalisis laba rugi bulanan untuk evaluasi
+                            kinerja keuangan
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/perencanaan-dan-analisa-keuangan/custom-analyctycs"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">
-                          Custom Analytics
-                        </h4>
-                        <p class="text-gray-600 text-lg">
-                          Menyediakan analitik khusus sesuai kebutuhan bisnis
-                          untuk pengambilan keputusan strategis
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Custom Analytics
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Menyediakan analitik khusus sesuai kebutuhan bisnis
+                            untuk pengambilan keputusan strategis
+                          </p>
+                        </div>
+                      </a>
                     </li>
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                    <li>
+                      <a
+                        href="/feature/perencanaan-dan-analisa-keuangan/laporan-profitabilitas"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">
-                          Laporan Profitabilitas Produk
-                        </h4>
-                        <p class="text-gray-600 text-lg">
-                          Melacak dan menganalisis profitabilitas tiap produk
-                          secara detail
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Laporan Profitabilitas Produk
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Melacak dan menganalisis profitabilitas tiap produk
+                            secara detail
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -1146,10 +1201,10 @@
             href="/harga"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'Harga',
-              'hover:bg-blue-700': activeMenu !== 'Harga',
+              'text-red-500': activeMenu === 'tab2',
+              'hover:bg-blue-700': activeMenu !== 'tab2',
             }"
-            @click="setActive('Harga')"
+            @click="setActive('tab2')"
           >
             Harga
           </a>
@@ -1190,7 +1245,7 @@ export default defineComponent({
     const isMenuOpen = ref(false);
 
     // State untuk menyimpan menu aktif
-    const activeMenu = ref<string>("Home");
+    const activeMenu = ref<string>("tab1");
     const activeMenuFeature = ref<string>("menu1");
     const activeMenuSolution = ref<string>("solution1");
 

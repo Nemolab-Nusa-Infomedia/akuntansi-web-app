@@ -1,15 +1,22 @@
 <template>
-  <div class="py-28 max-lg:py-8">
+  <div class="py-28 max-lg:py-4">
     <div class="">
       <div class="block px-28 max-lg:px-8 text-center pb-28 max-lg:pb-8">
         <h1
           class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
         >
-          Dasboard Terintegrasi untuk Pengelolaan Invoice Digital
+          Dashboard Terpersonalisasi untuk Memantau
+          <span class="relative inline-block">
+            Performa Bisnis
+            <span
+              class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[380px] -translate-x-1/2 rounded-sm"
+            ></span>
+          </span>
         </h1>
         <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-          Ucapkan selamat tinggal pada cara lama dalam pembuatan invoice. Kini
-          lebih cepat, praktis, dan dapatkan laporan otomatis!
+          Pantau performa bisnis Anda dengan dashboard yang disesuaikan sesuai
+          kebutuhan. Tampilkan metrik penting dan laporan dengan cara yang
+          memudahkan pengambilan keputusan.
         </p>
         <div class="flex justify-center">
           <a
@@ -34,8 +41,8 @@
           </a>
         </div>
       </div>
-      <div class="space-y-20 px-28 max-lg:px-8">
-        <FiturContent />
+      <div class="space-y-20 px-28 mb-16 max-lg:px-8">
+        <FiturContent :items="featureItems" />
       </div>
       <div class="">
         <FeatureAd />
@@ -103,11 +110,34 @@
   </div>
 </template>
 <script setup>
-import FiturContent from "@/components/FeatureContent.vue";
-import PricesCard from "../components/PriceCard.vue";
-import PricesCardResponsive from "../components/PriceCardResponsive.vue";
+import FiturContent from "../../../components/FeatureContent.vue";
+import PricesCard from "@/components/PriceCard.vue";
+import PricesCardResponsive from "@/components/PriceCardResponsive.vue";
 import FeatureAd from "@/components/FeatureAd.vue";
 import { ref } from "vue";
 
+const featureItems = [
+  {
+    image: "../../../assets/fitur.png",
+    title: "Pantau Kinerja Bisnis Anda dengan Grafik Visual yang Mudah",
+    description:
+      "Pantau performa bisnis Anda dengan visualisasi grafik yang intuitif dan mudah dipahami. Grafik ini menyediakan representasi visual yang jelas tentang kinerja dan tren bisnis. Memudahkan pemantauan metrik kunci tanpa perlu menganalisis data mentah. Dengan tampilan grafis yang sederhana, Anda dapat dengan cepat mengevaluasi kesehatan bisnis.",
+    link: "https://wa.me/123456789",
+  },
+  {
+    image: "../../../assets/fitur.png",
+    title: "Buat Beragam Dashboard untuk Pantau KPI Berbeda",
+    description:
+      "Ciptakan berbagai dashboard untuk memantau KPI yang berbeda sesuai dengan kebutuhan bisnis Anda. Setiap dashboard dapat disesuaikan untuk menampilkan metrik dan laporan yang relevan. Memudahkan pengawasan berbagai aspek bisnis dari satu platform. Dengan banyak dashboard, Anda dapat fokus pada area spesifik yang membutuhkan perhatian lebih.",
+    link: "https://wa.me/987654321",
+  },
+  {
+    image: "../../../assets/fitur.png",
+    title: "Integrasi Data untuk Visualisasi yang Akurat",
+    description:
+      "Integrasikan berbagai sumber data untuk memastikan visualisasi yang akurat dan konsisten. Fitur ini menyatukan data dari berbagai platform dan memperbarui informasi secara real-time. Memastikan bahwa laporan dan grafik Anda selalu berdasarkan data yang terbaru dan valid. Mengurangi risiko kesalahan data dan meningkatkan keandalan analisis.",
+    link: "https://wa.me/987654321",
+  },
+];
 const activeButton = ref("tahun");
 </script>
