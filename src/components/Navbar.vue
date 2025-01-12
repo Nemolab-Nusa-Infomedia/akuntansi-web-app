@@ -670,545 +670,653 @@
                 <div v-if="activeMenuSolution === 'solution1'" class="solution">
                   <ul class="grid grid-cols-3 gap-6">
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/ritel"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Ritel</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola penjualan barang secara langsung dengan
-                          pelacakan inventori
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Ritel</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola penjualan barang secara langsung dengan
+                            pelacakan inventori
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/online-shop"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Online Shop</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengotomatisasi manajemen penjualan online dan
-                          pelacakan pesanan
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Online Shop
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengotomatisasi manajemen penjualan online dan
+                            pelacakan pesanan
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        class="flex-shrink-0 flex"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/waralaba"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Waralaba</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengatur operasional bisnis waralaba dengan pemantauan
-                          kinerja cabang
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          class="flex-shrink-0 flex"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Waralaba</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengatur operasional bisnis waralaba dengan
+                            pemantauan kinerja cabang
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/trading"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Trading</h4>
-                        <p class="text-gray-600 text-lg">
-                          Memfasilitasi perdagangan barang dengan manajemen
-                          pesanan dan inventori efisien
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Trading</h4>
+                          <p class="text-gray-600 text-lg">
+                            Memfasilitasi perdagangan barang dengan manajemen
+                            pesanan dan inventori efisien
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/manufaktur"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Manufaktur</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengoptimalkan proses produksi dengan sistem
-                          pengelolaan bahan baku produksi
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Manufaktur</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengoptimalkan proses produksi dengan sistem
+                            pengelolaan bahan baku produksi
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/skincare"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Skincare</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola produksi, distribusi, dan penjualan produk
-                          dengan sistem inventori
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Skincare</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola produksi, distribusi, dan penjualan produk
+                            dengan sistem inventori
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/distributor"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Distributor</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola distribusi produk dengan sistem pengelolaan
-                          stok pengiriman terintegrasi
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Distributor
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola distribusi produk dengan sistem
+                            pengelolaan stok pengiriman terintegrasi
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/peternakan"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Peternakan</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola data ternak, produksi, dan keuangan
-                          peternakan secara terpadu
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Peternakan</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola data ternak, produksi, dan keuangan
+                            peternakan secara terpadu
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div v-if="activeMenuSolution === 'solution2'" class="solution">
                   <ul class="grid grid-cols-3 gap-6">
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                      <a
+                        href="/solution/skala-bisnis/starup"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Star-Up</h4>
-                        <p class="text-gray-600 text-lg">
-                          Memfasilitasi pertumbuhan bisnis baru dengan manajemen
-                          operasional fleksibel
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Star-Up</h4>
+                          <p class="text-gray-600 text-lg">
+                            Memfasilitasi pertumbuhan bisnis baru dengan
+                            manajemen operasional fleksibel
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/skala-bisnis/perusahaan"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">
-                          Perusahaan Menengah
-                        </h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengoptimalkan manajemen bisnis dengan alat
-                          pengelolaan sumber daya yang efisien
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Perusahaan Menengah
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengoptimalkan manajemen bisnis dengan alat
+                            pengelolaan sumber daya yang efisien
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        class="flex-shrink-0 flex"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/skala-bisnis/multicabang"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Multi Cabang</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola operasional dan kinerja banyak cabang dalam
-                          satu sistem terintegrasi
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          class="flex-shrink-0 flex"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Multi Cabang
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola operasional dan kinerja banyak cabang
+                            dalam satu sistem terintegrasi
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        class="flex-shrink-0 flex"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/skala-bisnis/umkm"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">UMKM</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola keuangan dan operasional usaha kecil dengan
-                          solusi sederhana dan efektif
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          class="flex-shrink-0 flex"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">UMKM</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola keuangan dan operasional usaha kecil
+                            dengan solusi sederhana dan efektif
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div v-if="activeMenuSolution === 'solution3'" class="solution">
                   <ul class="grid grid-cols-3 gap-6">
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/jasa"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Jasa</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola layanan pelanggan dan administrasi bisnis
-                          jasa secara efisien
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Jasa</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola layanan pelanggan dan administrasi bisnis
+                            jasa secara efisien
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/klinik"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Klinik</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengatur administrasi pasien, jadwal dokter, dan
-                          laporan medis secara digital
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Klinik</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengatur administrasi pasien, jadwal dokter, dan
+                            laporan medis secara digital
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        class="flex-shrink-0 flex"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/koperasi"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Koperasi</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola simpan pinjam, keanggotaan, dan laporan
-                          keuangan koperasi
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          class="flex-shrink-0 flex"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Koperasi</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola simpan pinjam, keanggotaan, dan laporan
+                            keuangan koperasi
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/restoran"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Restoran</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengotomatisasi manajemen pesanan, inventori, dan
-                          keuangan restoran
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Restoran</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengotomatisasi manajemen pesanan, inventori, dan
+                            keuangan restoran
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/logistik"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Logistik</h4>
-                        <p class="text-gray-600 text-lg">
-                          Memantau pengiriman, distribusi, dan inventori dengan
-                          pelacakan yang real-time
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Logistik</h4>
+                          <p class="text-gray-600 text-lg">
+                            Memantau pengiriman, distribusi, dan inventori
+                            dengan pelacakan yang real-time
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/yayasan"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Yayasan</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola donasi, program, dan keuangan yayasan secara
-                          transparan dan terstruktur
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Yayasan</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola donasi, program, dan keuangan yayasan
+                            secara transparan dan terstruktur
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/layanan-dan-organisasi/katering"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Katering</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola pesanan dan distribusi makanan dengan sistem
-                          terorganisir
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Katering</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola pesanan dan distribusi makanan dengan
+                            sistem terorganisir
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-4 flex gap-4">
+                      <a
+                        href="/solution/layanan-dan-organisasi/kontraktor"
+                        class="mb-4 flex gap-4"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-shrink-0 flex"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">Kontraktor</h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengelola proyek konstruksi, anggaran, dan sumber
+                            daya dengan manajemen
+                          </p>
+                        </div>
+                      </a>
                     </li>
                     <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="flex-shrink-0 flex"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
+                      <a
+                        href="/solution/perdagangan-dan-industri/manufaktur"
+                        class="mb-4 flex gap-4"
                       >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">Kontraktor</h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengelola proyek konstruksi, anggaran, dan sumber daya
-                          dengan manajemen
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div v-if="activeMenuSolution === 'menu4'" class="menu">
-                  <ul class="grid grid-cols-3 gap-6">
-                    <li class="mb-4 flex gap-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        class="flex-shrink-0 flex"
-                        fill="none"
-                      >
-                        <path
-                          d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
-                          stroke="#536DFE"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <div>
-                        <h4 class="text-xl font-semibold mb-2">
-                          Bimbingan Belajar
-                        </h4>
-                        <p class="text-gray-600 text-lg">
-                          Mengatur jadwal kelas, pembayaran, dan data siswa
-                          dalam satu platform terintegrasi
-                        </p>
-                      </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          class="flex-shrink-0 flex"
+                          fill="none"
+                        >
+                          <path
+                            d="M21 18.04H23M17 18.04C17 16.714 16.4732 15.4422 15.5355 14.5045C14.5979 13.5668 13.3261 13.04 12 13.04C10.6739 13.04 9.40215 13.5668 8.46447 14.5045C7.52678 15.4422 7 16.714 7 18.04M12 2.04004V9.04004M12 2.04004L8 6.04004M12 2.04004L16 6.04004M4.22 10.26L5.64 11.68M1 18.04H3M18.36 11.68L19.78 10.26M23 22.04H1"
+                            stroke="#536DFE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div>
+                          <h4 class="text-xl font-semibold mb-2">
+                            Bimbingan Belajar
+                          </h4>
+                          <p class="text-gray-600 text-lg">
+                            Mengatur jadwal kelas, pembayaran, dan data siswa
+                            dalam satu platform terintegrasi
+                          </p>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>

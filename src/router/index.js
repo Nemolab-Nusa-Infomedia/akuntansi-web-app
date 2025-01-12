@@ -21,6 +21,26 @@ import IntegrationView from "@/views/feature/integrasi-dan-platform/IntegrationV
 import HRISView from "@/views/feature/integrasi-dan-platform/HRISView.vue";
 import POSSystemView from "@/views/feature/integrasi-dan-platform/POSSystemView.vue";
 import PayrollView from "@/views/feature/integrasi-dan-platform/PayrollView.vue";
+import BimbinganView from "@/views/solution/layanan-dan-organisasi/BimbinganView.vue";
+import JasaView from "@/views/solution/layanan-dan-organisasi/JasaView.vue";
+import KateringView from "@/views/solution/layanan-dan-organisasi/KateringView.vue";
+import KlinikView from "@/views/solution/layanan-dan-organisasi/KlinikView.vue";
+import KontraktorView from "@/views/solution/layanan-dan-organisasi/KontraktorView.vue";
+import KoperasiView from "@/views/solution/layanan-dan-organisasi/KoperasiView.vue";
+import LogistikView from "@/views/solution/layanan-dan-organisasi/LogistikView.vue";
+import RestoranView from "@/views/solution/layanan-dan-organisasi/RestoranView.vue";
+import YayasanView from "@/views/solution/layanan-dan-organisasi/YayasanView.vue";
+import DistributorView from "@/views/solution/perdagangan-dan-industri/DistributorView.vue";
+import OnlineShopView from "@/views/solution/perdagangan-dan-industri/OnlineShopView.vue";
+import PeternakanView from "@/views/solution/perdagangan-dan-industri/PeternakanView.vue";
+import RitelView from "@/views/solution/perdagangan-dan-industri/RitelView.vue";
+import TradingView from "@/views/solution/perdagangan-dan-industri/TradingView.vue";
+import MultiCabangView from "@/views/solution/skala-bisnis/MultiCabangView.vue";
+import PerusahaanView from "@/views/solution/skala-bisnis/PerusahaanView.vue";
+import StarUpView from "@/views/solution/skala-bisnis/StarUpView.vue";
+import UMKMView from "@/views/solution/skala-bisnis/UMKMView.vue";
+import SkincarePerdaganganView from "@/views/solution/perdagangan-dan-industri/SkincarePerdaganganView.vue";
+import ManufakturPerdaganganView from "@/views/solution/perdagangan-dan-industri/ManufakturPerdaganganView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -128,10 +148,111 @@ const router = createRouter({
       component: PayrollView,
     },
     {
-      path: "/solution",
-      name: "solution",
-      component: SolutionView,
+      path: "/solution/layanan-dan-organisasi/bimbingan-belajar",
+      name: "bimbingan-belajar",
+      component: BimbinganView,
     },
+    {
+      path: "/solution/layanan-dan-organisasi/jasa",
+      name: "jasa",
+      component: JasaView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/katering",
+      name: "katering",
+      component: KateringView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/klinik",
+      name: "klinik",
+      component: KlinikView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/kontraktor",
+      name: "kontraktor",
+      component: KontraktorView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/koperasi",
+      name: "koperasi",
+      component: KoperasiView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/logistik",
+      name: "logistik",
+      component: LogistikView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/restoran",
+      name: "restoran",
+      component: RestoranView,
+    },
+    {
+      path: "/solution/layanan-dan-organisasi/yayasan",
+      name: "yayasan",
+      component: YayasanView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/distributor",
+      name: "distributor",
+      component: DistributorView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/manufaktur",
+      name: "manufaktur",
+      component: ManufakturPerdaganganView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/online-shop",
+      name: "online-shop",
+      component: OnlineShopView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/peternakan",
+      name: "peternakan",
+      component: PeternakanView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/ritel",
+      name: "ritel",
+      component: RitelView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/skincare",
+      name: "skincare",
+      component: SkincarePerdaganganView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/trading",
+      name: "trading",
+      component: TradingView,
+    },
+    {
+      path: "/solution/perdagangan-dan-industri/waralaba",
+      name: "waralaba",
+      component: DistributorView,
+    },
+    {
+      path: "/solution/skala-bisnis/multicabang",
+      name: "multicabang",
+      component: MultiCabangView,
+    },
+    {
+      path: "/solution/skala-bisnis/perusahaan",
+      name: "perusahaan",
+      component: PerusahaanView,
+    },
+    {
+      path: "/solution/skala-bisnis/starup",
+      name: "starup",
+      component: StarUpView,
+    },
+    {
+      path: "/solution/skala-bisnis/umkm",
+      name: "umkm",
+      component: UMKMView,
+    },
+
   ],
 });
 
