@@ -6,6 +6,35 @@ import { ref } from "vue";
 import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
+const cardsData = [
+  {
+    subtitle: "Masalah Umum Logistik",
+    problem: "Aset",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Masalah Pengelolaan Aset di Logistik",
+    description:
+      "Pengelolaan aset yang rumit dapat menyebabkan ketidakefisienan. Sistem manajemen aset yang terintegrasi.",
+  },
+  {
+    subtitle: "Masalah Umum Logistik",
+    problem: "Operasional",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Tantangan Biaya Operasional di Logistik",
+    description:
+      "Biaya operasional yang tidak terkontrol dapat mengganggu kestabilan keuangan. Alat manajemen anggaran membantu memantau.",
+  },
+  {
+    subtitle: "Masalah Umum Logistik",
+    problem: "Laporan Keuangan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Kesulitan Membuat Laporan Keuangan di Logistik",
+    description:
+      "Laporan keuangan yang tidak jelas membuat sulit mengukur kinerja. Sistem otomatis membantu menyusun laporan mudah dipahami.",
+  },
+];
 const activeButton = ref("tahun");
 </script>
 <template>
@@ -14,12 +43,19 @@ const activeButton = ref("tahun");
       <h1
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
-        Solusi Akuntansi Terbaik untuk Mengelola Pembukuan Bisnis Retail Anda
+        Catat Semua Detail
+        <span class="relative inline-block">
+          Transaksi Logistik
+          <span
+            class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[425px] -translate-x-1/2 rounded-sm"
+          ></span>
+        </span>
+        Anda dengan Mudah Menggunakan Software Akuntansi Core Jurnal
       </h1>
       <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-        Software akuntansi kami memudahkan pembukuan bisnis retail Anda dengan
-        fitur lengkap dan efisien. Tingkatkan akurasi dan fokus pada
-        pengembangan bisnis.
+        Dengan software Core Jurnal, pencatatan setiap detail transaksi logistik
+        menjadi lebih mudah dan akurat. Nikmati kemudahan dalam mengelola dan
+        memantau transaksi logistik Anda tanpa kerepotan.
       </p>
       <div class="flex justify-center">
         <a
@@ -51,8 +87,8 @@ const activeButton = ref("tahun");
         <h2
           class="text-4xl max-lg:text-2xl mb-10 max-lg:mb-5 max-lg:text-center font-semibold text-primary"
         >
-          Permudah bisnis ritel Anda dan tingkatkan keuntungan dengan
-          CoreJurnal. Cocok untuk semua jenis bisnis ritel di Indonesia
+          Raih Kemudahan Catat Semua Transaksi Logistik Anda dengan Core Jurnal
+          Sekarang!
         </h2>
         <div class="max-lg:text-center max-lg:flex max-lg:justify-center">
           <a
@@ -89,16 +125,17 @@ const activeButton = ref("tahun");
     >
       <div class="text-center space-y-6 max-lg:space-y-3">
         <h1 class="text-5xl max-lg:text-2xl text-primary font-semibold">
-          Masalah Umum dalam Pembukuan Bisnis Ritel
+          Masalah Umum dalam Transaksi Logistik
         </h1>
         <p class="text-2xl max-lg:text-lg text-[#45434D]">
-          Akuntansi adalah dasar penting untuk bisnis ritel Anda. Tanpa
-          pencatatan yang akurat, sulit untuk mengetahui sejauh mana kemajuan
-          bisnis Anda.
+          Banyak Logistik menghadapi masalah akuntansi seperti pencatatan yang
+          rumit dan laporan keuangan yang membingungkan. Jangan biarkan masalah
+          ini menghambat efisiensi Logistik Anda, temukan solusinya sekarang
+          sebelum terlambat!
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

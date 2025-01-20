@@ -6,6 +6,35 @@ import { ref } from "vue";
 import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
+const cardsData = [
+  {
+    subtitle: "Masalah Umum Start-Up",
+    problem: "Manual",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Masalah Sistem Manual untuk Bisnis Anda",
+    description:
+      "Sistem manual memakan waktu dan rawan kesalahan. Automasi bisa meningkatkan efisiensi dan akurasi.",
+  },
+  {
+    subtitle: "Masalah Umum Start-Up",
+    problem: "Kurang Mobilitas",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Dampak Kurangnya Mobilitas pada Produktivitas",
+    description:
+      "Kurang mobilitas membatasi akses data saat bepergian. Solusi berbasis cloud bisa meningkatkan fleksibilitas.",
+  },
+  {
+    subtitle: "Masalah Umum Start-Up",
+    problem: "Pemantauan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Bahaya Kurangnya Pemantauan Bisnis ",
+    description:
+      "Tanpa pemantauan yang baik, Anda bisa kehilangan kontrol. Sistem pemantauan membantu Anda tetap pada jalur yang benar.",
+  },
+];
 const activeButton = ref("tahun");
 </script>
 <template>
@@ -14,12 +43,18 @@ const activeButton = ref("tahun");
       <h1
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
-        Solusi Akuntansi Terbaik untuk Mengelola Pembukuan Bisnis Retail Anda
+        Tingkatkan Transparansi Laporan Keuangan untuk Pertumbuhan
+        <span class="relative inline-block">
+          Start Up Anda
+          <span
+            class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[340px] -translate-x-1/2 rounded-sm"
+          ></span>
+        </span>
       </h1>
       <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-        Software akuntansi kami memudahkan pembukuan bisnis retail Anda dengan
-        fitur lengkap dan efisien. Tingkatkan akurasi dan fokus pada
-        pengembangan bisnis.
+        Laporan keuangan yang transparan memungkinkan Anda memantau keuangan
+        Start Up dengan lebih jelas. Ini membantu pengambilan keputusan yang
+        lebih baik untuk mendukung pertumbuhan bisnis.
       </p>
       <div class="flex justify-center">
         <a
@@ -51,8 +86,8 @@ const activeButton = ref("tahun");
         <h2
           class="text-4xl max-lg:text-2xl mb-10 max-lg:mb-5 max-lg:text-center font-semibold text-primary"
         >
-          Permudah bisnis ritel Anda dan tingkatkan keuntungan dengan
-          CoreJurnal. Cocok untuk semua jenis bisnis ritel di Indonesia
+          Rahasia Sukses Start Up yang Tak Banyak Diketahui dengan Laporan
+          Keuangan Transparan
         </h2>
         <div class="max-lg:text-center max-lg:flex max-lg:justify-center">
           <a
@@ -89,16 +124,16 @@ const activeButton = ref("tahun");
     >
       <div class="text-center space-y-6 max-lg:space-y-3">
         <h1 class="text-5xl max-lg:text-2xl text-primary font-semibold">
-          Masalah Umum dalam Pembukuan Bisnis Ritel
+          Masalah Umum dalam Keuangan Start Up
         </h1>
         <p class="text-2xl max-lg:text-lg text-[#45434D]">
-          Akuntansi adalah dasar penting untuk bisnis ritel Anda. Tanpa
-          pencatatan yang akurat, sulit untuk mengetahui sejauh mana kemajuan
-          bisnis Anda.
+          Banyak start up terjebak dalam masalah akuntansi seperti kesalahan
+          pencatatan dan laporan keuangan yang membingungkan. Jangan biarkan ini
+          menghancurkan bisnis Anda, atasi sebelum terlambat!
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

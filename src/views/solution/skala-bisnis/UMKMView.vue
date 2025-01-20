@@ -6,6 +6,35 @@ import { ref } from "vue";
 import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
+const cardsData = [
+  {
+    subtitle: "Masalah Umum UMKM",
+    problem: "Invoice",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Masalah Pengelolaan Invoice di UMKM",
+    description:
+      "Mengelola invoice secara manual bisa menyebabkan kesalahan dan keterlambatan. Sistem otomatisasi mempermudah proses ini.",
+  },
+  {
+    subtitle: "Masalah Umum UMKM",
+    problem: "Inventori",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Tantangan Pengelolaan Inventori di UMKM",
+    description:
+      "Pengelolaan inventori yang tidak efisien dapat menyebabkan kekurangan atau kelebihan stok. Inventori dapat menjaga stok dengan lebih baik.",
+  },
+  {
+    subtitle: "Masalah Umum UMKM",
+    problem: "Laporan Keuangan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Kesulitan Membuat Laporan Keuangan di UMKM",
+    description:
+      "Laporan keuangan yang rumit dapat membingungkan dan mempengaruhi keputusan bisnis. ",
+  },
+];
 const activeButton = ref("tahun");
 </script>
 <template>
@@ -14,12 +43,19 @@ const activeButton = ref("tahun");
       <h1
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
-        Solusi Akuntansi Terbaik untuk Mengelola Pembukuan Bisnis Retail Anda
+        Aplikasi Akuntansi untuk
+        <span class="relative inline-block">
+          Usaha Mikro dan Kecil
+          <span
+            class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[520px] -translate-x-1/2 rounded-sm"
+          ></span>
+        </span>
+        sebagai Kunci Keahlian Pembukuan
       </h1>
       <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-        Software akuntansi kami memudahkan pembukuan bisnis retail Anda dengan
-        fitur lengkap dan efisien. Tingkatkan akurasi dan fokus pada
-        pengembangan bisnis.
+        Aplikasi akuntansi untuk usaha mikro dan kecil mempermudah pengelolaan
+        keuangan dengan fitur yang user-friendly. Dengan menggunakan aplikasi
+        ini, Anda dapat menguasai pembukuan secara efisien dan akurat.
       </p>
       <div class="flex justify-center">
         <a
@@ -47,12 +83,16 @@ const activeButton = ref("tahun");
     <div
       class="md:flex md:justify-between px-28 gap-7 max-lg:space-y-4 max-lg:px-8 py-20 max-lg:py-5 items-center"
     >
+      <img
+        src="/assets/fitur.png"
+        class="h-[630px] max-lg:h-[250px] w-[836px] max-lg:w-screen"
+        alt=""
+      />
       <div>
         <h2
           class="text-4xl max-lg:text-2xl mb-10 max-lg:mb-5 max-lg:text-center font-semibold text-primary"
         >
-          Permudah bisnis ritel Anda dan tingkatkan keuntungan dengan
-          CoreJurnal. Cocok untuk semua jenis bisnis ritel di Indonesia
+          Temukan Cara Cepat Jadi Ahli Pembukuan dengan Aplikasi Akuntansi Ini!
         </h2>
         <div class="max-lg:text-center max-lg:flex max-lg:justify-center">
           <a
@@ -78,27 +118,23 @@ const activeButton = ref("tahun");
           </a>
         </div>
       </div>
-      <img
-        src="/assets/fitur.png"
-        class="h-[630px] max-lg:h-[250px] w-[836px] max-lg:w-screen"
-        alt=""
-      />
     </div>
     <div
       class="py-20 max-lg:py-5 space-y-24 max-lg:space-y-6 px-28 max-lg:px-8"
     >
       <div class="text-center space-y-6 max-lg:space-y-3">
         <h1 class="text-5xl max-lg:text-2xl text-primary font-semibold">
-          Masalah Umum dalam Pembukuan Bisnis Ritel
+          Masalah Umum dalam Keuangan UMKM
         </h1>
         <p class="text-2xl max-lg:text-lg text-[#45434D]">
-          Akuntansi adalah dasar penting untuk bisnis ritel Anda. Tanpa
-          pencatatan yang akurat, sulit untuk mengetahui sejauh mana kemajuan
-          bisnis Anda.
+          Banyak UMKM terjebak dalam masalah akuntansi seperti sistem manual
+          yang rumit dan laporan keuangan yang tidak jelas. Jangan biarkan
+          masalah ini menghambat pertumbuhan bisnis Anda, atasi segera sebelum
+          terlambat!
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

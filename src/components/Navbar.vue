@@ -1288,7 +1288,7 @@
                     </li>
                     <li class="mb-4 flex gap-4">
                       <a
-                        href="/solution/perdagangan-dan-industri/manufaktur"
+                        href="/solution/layanan-dan-organisasi/bimbingan-belajar"
                         class="mb-4 flex gap-4"
                       >
                         <svg

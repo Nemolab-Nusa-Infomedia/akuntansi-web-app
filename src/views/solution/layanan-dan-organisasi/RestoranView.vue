@@ -6,6 +6,35 @@ import { ref } from "vue";
 import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
+const cardsData = [
+  {
+    subtitle: "Masalah Umum Restoran",
+    problem: "Food Cost",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Tantangan Perhitungan Food Cost di Restoran",
+    description:
+      "Kesalahan dalam perhitungan food cost dapat merugikan profit. Sistem yang tepat membantu memastikan perhitungan food cost yang akurat.",
+  },
+  {
+    subtitle: "Masalah Umum Restoran",
+    problem: "Pencatatan",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Masalah Pencatatan Bahan Baku di Restoran",
+    description:
+      "Pencatatan bahan baku yang tidak rapi dapat menyebabkan pemborosan. Pengelolaan stok yang teratur memastikan efisiensi operasional.",
+  },
+  {
+    subtitle: "Masalah Umum Restoran",
+    problem: "Laporan Keuangan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Kesulitan Membuat Laporan Keuangan di Restoran",
+    description:
+      "Laporan keuangan yang tidak jelas membuat sulit mengukur kinerja. Sistem otomatis membantu menyusun laporan mudah dipahami.",
+  },
+];
 const activeButton = ref("tahun");
 </script>
 <template>
@@ -14,12 +43,19 @@ const activeButton = ref("tahun");
       <h1
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
-        Solusi Akuntansi Terbaik untuk Mengelola Pembukuan Bisnis Retail Anda
+        Sederhanakan Pengelolaan
+        <span class="relative inline-block">
+          Keuangan Restoran
+          <span
+            class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[470px] -translate-x-1/2 rounded-sm"
+          ></span>
+        </span>
+        Anda dengan Software Akuntansi Core Jurnal
       </h1>
       <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-        Software akuntansi kami memudahkan pembukuan bisnis retail Anda dengan
-        fitur lengkap dan efisien. Tingkatkan akurasi dan fokus pada
-        pengembangan bisnis.
+        Software akuntansi Kledo mempermudah pengelolaan keuangan restoran Anda
+        dengan fitur otomatis efisien. Sederhanakan pencatatan transaksi dan
+        laporan keuangan untuk fokus pada pertumbuhan bisnis Anda.
       </p>
       <div class="flex justify-center">
         <a
@@ -51,8 +87,8 @@ const activeButton = ref("tahun");
         <h2
           class="text-4xl max-lg:text-2xl mb-10 max-lg:mb-5 max-lg:text-center font-semibold text-primary"
         >
-          Permudah bisnis ritel Anda dan tingkatkan keuntungan dengan
-          CoreJurnal. Cocok untuk semua jenis bisnis ritel di Indonesia
+          Rahasianya di Sini! Cara Mudah Kelola Keuangan Restoran dengan Core
+          Jurnal!
         </h2>
         <div class="max-lg:text-center max-lg:flex max-lg:justify-center">
           <a
@@ -89,16 +125,17 @@ const activeButton = ref("tahun");
     >
       <div class="text-center space-y-6 max-lg:space-y-3">
         <h1 class="text-5xl max-lg:text-2xl text-primary font-semibold">
-          Masalah Umum dalam Pembukuan Bisnis Ritel
+          Masalah Umum dalam Keuangan Restoran
         </h1>
         <p class="text-2xl max-lg:text-lg text-[#45434D]">
-          Akuntansi adalah dasar penting untuk bisnis ritel Anda. Tanpa
-          pencatatan yang akurat, sulit untuk mengetahui sejauh mana kemajuan
-          bisnis Anda.
+          Banyak restoran menghadapi masalah akuntansi seperti pencatatan manual
+          yang rumit dan laporan keuangan yang membingungkan. Jangan biarkan
+          masalah ini menghambat bisnis Anda, segera temukan solusinya sebelum
+          terlambat!
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

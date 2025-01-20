@@ -6,6 +6,35 @@ import { ref } from "vue";
 import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
+const cardsData = [
+  {
+    subtitle: "Masalah Perusahaan Multi Cabang",
+    problem: "Konsolidasi",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Masalah Konsolidasi Cabang di Bisnis Multi-Cabang",
+    description:
+      "Menggabungkan data dari berbagai cabang bisa rumit dan memakan waktu. Sistem konsolidasi yang efisien mempermudah integrasi informasi.",
+  },
+  {
+    subtitle: "Masalah Perusahaan Multi Cabang",
+    problem: "Pergerakan Barang",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Tantangan Pergerakan Barang Bisnis Multi-Cabang",
+    description:
+      "Mengelola pergerakan barang antar cabang sering kali sulit. Sistem manajemen inventori membantu melacak barang dengan tepat.",
+  },
+  {
+    subtitle: "Masalah Perusahaan Multi Cabang",
+    problem: "Pembukuan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Kesulitan Otomatisasi Pembukuan di Multi-Cabang",
+    description:
+      "Pembukuan manual bisa menyebabkan kesalahan dan inefisiensi. Sistem otomatisasi pembukuan mempermudah pencatatan.",
+  },
+];
 const activeButton = ref("tahun");
 </script>
 <template>
@@ -14,12 +43,19 @@ const activeButton = ref("tahun");
       <h1
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
-        Solusi Akuntansi Terbaik untuk Mengelola Pembukuan Bisnis Retail Anda
+        Miliki Kontrol Lengkap pada
+        <span class="relative inline-block">
+          Setiap Cabang
+          <span
+            class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[350px] -translate-x-1/2 rounded-sm"
+          ></span>
+        </span>
+        demi Kesuksesan Bisnis Anda
       </h1>
       <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-        Software akuntansi kami memudahkan pembukuan bisnis retail Anda dengan
-        fitur lengkap dan efisien. Tingkatkan akurasi dan fokus pada
-        pengembangan bisnis.
+        Miliki kendali penuh atas setiap cabang untuk memastikan operasional
+        berjalan sesuai rencana. Dengan kontrol yang terpusat, Anda dapat
+        mengoptimalkan kinerja dan mendorong kesuksesan bisnis Anda.
       </p>
       <div class="flex justify-center">
         <a
@@ -51,8 +87,8 @@ const activeButton = ref("tahun");
         <h2
           class="text-4xl max-lg:text-2xl mb-10 max-lg:mb-5 max-lg:text-center font-semibold text-primary"
         >
-          Permudah bisnis ritel Anda dan tingkatkan keuntungan dengan
-          CoreJurnal. Cocok untuk semua jenis bisnis ritel di Indonesia
+          Temukan Cara Rahasia Mengendalikan Setiap Cabang Bisnis Anda dengan
+          Sukses!
         </h2>
         <div class="max-lg:text-center max-lg:flex max-lg:justify-center">
           <a
@@ -89,16 +125,16 @@ const activeButton = ref("tahun");
     >
       <div class="text-center space-y-6 max-lg:space-y-3">
         <h1 class="text-5xl max-lg:text-2xl text-primary font-semibold">
-          Masalah Umum dalam Pembukuan Bisnis Ritel
+          Masalah Umum dalam Bisnis Multi Cabang
         </h1>
         <p class="text-2xl max-lg:text-lg text-[#45434D]">
-          Akuntansi adalah dasar penting untuk bisnis ritel Anda. Tanpa
-          pencatatan yang akurat, sulit untuk mengetahui sejauh mana kemajuan
-          bisnis Anda.
+          Banyak bisnis multi cabang menghadapi masalah seperti pengelolaan
+          cabang yang buruk dan kontrol yang lemah. Atasi masalah ini sekarang
+          untuk memastikan kesuksesan bisnis Anda!
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">
