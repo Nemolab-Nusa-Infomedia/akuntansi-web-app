@@ -7,6 +7,36 @@ import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
 const activeButton = ref("tahun");
+
+const cardsData = [
+  {
+    subtitle: "Masalah Umum Pembukuan",
+    problem: "Tidak Up to Date",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Laporan Keuangan yang Tidak Terupdate",
+    description:
+      "Laporan keuangan yang tidak diperbarui secara rutin membuat Anda tidak bisa melihat kondisi finansial bisnis secara jelas.",
+  },
+  {
+    subtitle: "Masalah Umum Pembukuan",
+    problem: "Tidak Akurat",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Masalah dalam Pengelolaan Inventaris",
+    description:
+      "Pengelolaan inventaris yang tidak tepat dapat menyebabkan kekurangan atau kelebihan stok, berdampak pada keuntungan.",
+  },
+  {
+    subtitle: "Masalah Umum Pembukuan",
+    problem: "Kesalahan Pencatatan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Kesalahan Transaksi yang Mengganggu Laporan",
+    description:
+      "Kesalahan dalam mencatat transaksi dapat mengakibatkan laporan keuangan yang tidak akurat dan mempengaruhi keputusan bisnis.",
+  },
+];
 </script>
 <template>
   <div class="py-28 max-lg:py-8">
@@ -105,7 +135,7 @@ const activeButton = ref("tahun");
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

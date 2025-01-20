@@ -6,6 +6,35 @@ import { ref } from "vue";
 import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
+const cardsData = [
+  {
+    subtitle: "Masalah Umum Bisnis Skincare",
+    problem: "Konsistensi",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Kesulitan Menjaga Konsistensi Keuangan ",
+    description:
+      "Menjaga pelaporan keuangan yang konsisten di semua cabang waralaba sering kali sulit karena perbedaan metode dan standar.",
+  },
+  {
+    subtitle: "Masalah Umum Bisnis Skincare",
+    problem: "Royalti dan Lisensi",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Masalah Pengelolaan Royalti dan Biaya Lisensi",
+    description:
+      "Mengelola royalti dan biaya lisensi dengan tepat waktu dan akurat bisa menjadi tantangan, mempengaruhi antara franchisor dan franchisee.",
+  },
+  {
+    subtitle: "Masalah Umum Bisnis Skincare",
+    problem: "Tidak Terintegrasi",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Tantangan dalam Integrasi Sistem Akuntansi ",
+    description:
+      "Integrasi sistem akuntansi yang buruk menyulitkan pengumpulan dan analisis data keuangan dari berbagai cabang.",
+  },
+];
 const activeButton = ref("tahun");
 </script>
 <template>
@@ -14,12 +43,19 @@ const activeButton = ref("tahun");
       <h1
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
-        Solusi Akuntansi Terbaik untuk Mengelola Pembukuan Bisnis Retail Anda
+        Optimalkan Kesehatan Keuangan
+        <span class="relative inline-block">
+          Bisnis Skincare
+          <span
+            class="absolute inset-7 -z-10 bg-[#FFC055] h-6 max-lg:hidden left-1/2 w-[365px] -translate-x-1/2 rounded-sm"
+          ></span>
+        </span>
+        Anda dengan Software Akuntansi Canggih
       </h1>
       <p class="text-[#45434D] text-3xl mb-20 max-lg:mb-4 max-lg:text-xl">
-        Software akuntansi kami memudahkan pembukuan bisnis retail Anda dengan
-        fitur lengkap dan efisien. Tingkatkan akurasi dan fokus pada
-        pengembangan bisnis.
+        Software akuntansi canggih ini membantu Anda mengoptimalkan kesehatan
+        keuangan bisnis skincare. Kelola laporan keuangan dan analisis dengan
+        mudah untuk pengambilan keputusan yang lebih baik.
       </p>
       <div class="flex justify-center">
         <a
@@ -47,12 +83,17 @@ const activeButton = ref("tahun");
     <div
       class="md:flex md:justify-between px-28 gap-7 max-lg:space-y-4 max-lg:px-8 py-20 max-lg:py-5 items-center"
     >
+      <img
+        src="/assets/fitur.png"
+        class="h-[630px] max-lg:h-[250px] w-[836px] max-lg:w-screen"
+        alt=""
+      />
       <div>
         <h2
           class="text-4xl max-lg:text-2xl mb-10 max-lg:mb-5 max-lg:text-center font-semibold text-primary"
         >
-          Permudah bisnis ritel Anda dan tingkatkan keuntungan dengan
-          CoreJurnal. Cocok untuk semua jenis bisnis ritel di Indonesia
+          Raih Keuangan Bisnis Skincare yang Sempurna. Temukan Cara Mudah dengan
+          Software Akuntansi Canggih Ini!
         </h2>
         <div class="max-lg:text-center max-lg:flex max-lg:justify-center">
           <a
@@ -78,27 +119,22 @@ const activeButton = ref("tahun");
           </a>
         </div>
       </div>
-      <img
-        src="/assets/fitur.png"
-        class="h-[630px] max-lg:h-[250px] w-[836px] max-lg:w-screen"
-        alt=""
-      />
     </div>
     <div
       class="py-20 max-lg:py-5 space-y-24 max-lg:space-y-6 px-28 max-lg:px-8"
     >
       <div class="text-center space-y-6 max-lg:space-y-3">
         <h1 class="text-5xl max-lg:text-2xl text-primary font-semibold">
-          Masalah Umum dalam Pembukuan Bisnis Ritel
+          Masalah Umum pada Bisnis Skincare
         </h1>
         <p class="text-2xl max-lg:text-lg text-[#45434D]">
-          Akuntansi adalah dasar penting untuk bisnis ritel Anda. Tanpa
-          pencatatan yang akurat, sulit untuk mengetahui sejauh mana kemajuan
-          bisnis Anda.
+          Masalah umum pada akuntansi waralaba termasuk kesalahan pencatatan,
+          laporan keuangan yang rumit, dan integrasi sistem yang tidak efisien.
+          Mengatasi masalah ini penting untuk operasi dan kepatuhan yang lancar.
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

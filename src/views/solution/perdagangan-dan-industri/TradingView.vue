@@ -7,6 +7,36 @@ import ProblemCard from "@/components/ProblemCard.vue";
 import SolutionCard from "@/components/SolutionCard.vue";
 
 const activeButton = ref("tahun");
+
+const cardsData = [
+  {
+    subtitle: "Masalah Umum Dagang",
+    problem: "Stock Loss",
+    image: "/../../assets/problem.png",
+    alt: "problem",
+    cardTitle: "Tidak Ada Manajemen Pengelolaan Stok",
+    description:
+      "Tanpa manajemen stok yang baik, Anda bisa mengalami kekurangan atau kelebihan persediaan.",
+  },
+  {
+    subtitle: "Masalah Umum Dagang",
+    problem: "Pencatatan Manual",
+    image: "/../../assets/problem-2.png",
+    alt: "problem",
+    cardTitle: "Pencatatan Manual yang Rentan Kesalahan",
+    description:
+      "Pencatatan manual seringkali mengakibatkan kesalahan dan ketidakakuratan dalam laporan keuangan, mempengaruhi keputusan bisnis.",
+  },
+  {
+    subtitle: "Masalah Umum Dagang",
+    problem: "Tidak Ada Laporan",
+    image: "/../../assets/problem-3.png",
+    alt: "problem",
+    cardTitle: "Tidak Adanya Laporan Keuangang",
+    description:
+      "Tanpa laporan keuangan yang rutin, sulit untuk memantau kondisi finansial bisnis dan membuat keputusan yang informatif.",
+  },
+];
 </script>
 <template>
   <div class="py-28 max-lg:py-8">
@@ -15,6 +45,7 @@ const activeButton = ref("tahun");
         class="text-primary font-bold text-5xl max-lg:text-3xl max-lg:mb-4 mb-10"
       >
         Software akuntansi pilihan lebih dari 100.000+ pemilik
+
         <span class="relative inline-block">
           bisnis Dagang
           <span
@@ -105,7 +136,7 @@ const activeButton = ref("tahun");
         </p>
       </div>
       <div class="md:flex md:justify-between items-center">
-        <ProblemCard />
+        <ProblemCard :cards="cardsData" />
       </div>
     </div>
     <div class="py-20 max-lg:py-5 px-28 max-lg:px-8">

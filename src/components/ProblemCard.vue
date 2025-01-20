@@ -29,17 +29,11 @@
         ></div>
         <div
           class="absolute inset-0"
-          style="
-            background: linear-gradient(
-              180deg,
-              rgba(63, 81, 181, 0.6) 28.44%,
-              rgba(0, 0, 0, 0) 99.97%
-            );
-          "
+          style="background: linear-gradient(180deg, rgba(63, 81, 181, 0.6) 28.44%, rgba(0, 0, 0, 0) 99.97%)"
         ></div>
       </div>
       <div class="p-10 space-y-5 max-lg:space-y-2 max-lg:p-5">
-        <p class="text-[#45434D] text-4xl max-lg:text-2xl font-semibold">
+        <p class="text-[#45434D] text-3xl max-lg:text-xl font-semibold">
           {{ item.cardTitle }}
         </p>
         <p class="text-xl max-lg:text-lg text-[#73727A]">{{ item.description }}</p>
@@ -49,33 +43,11 @@
 </template>
 
 <script setup>
-const cards = [
-  {
-    subtitle: "Masalah Umum Pembukuan",
-    problem: "Tidak Up to Date",
-    image: "assets/problem.png",
-    alt: "problem",
-    cardTitle: "Laporan Keuangan yang Tidak Terupdate",
-    description:
-      "Laporan keuangan yang tidak diperbarui secara rutin membuat Anda tidak bisa melihat kondisi finansial bisnis secara jelas.",
+defineProps({
+  cards: {
+    type: Array,
+    required: true,
+    default: () => [],
   },
-  {
-    subtitle: "Masalah Umum Pembukuan",
-    problem: "Tidak Akurat",
-    image: "assets/problem-2.png",
-    alt: "problem",
-    cardTitle: "Masalah dalam Pengelolaan Inventaris",
-    description:
-      "Pengelolaan inventaris yang tidak tepat dapat menyebabkan kekurangan atau kelebihan stok, berdampak pada keuntungan.",
-  },
-  {
-    subtitle: "Masalah Umum Pembukuan",
-    problem: "Kesalahan Pencatatan",
-    image: "assets/problem-3.png",
-    alt: "problem",
-    cardTitle: "Kesalahan Transaksi yang Mengganggu Laporan",
-    description:
-      "Kesalahan dalam mencatat transaksi dapat mengakibatkan laporan keuangan yang tidak akurat dan mempengaruhi keputusan bisnis.",
-  },
-];
+});
 </script>
