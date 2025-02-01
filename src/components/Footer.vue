@@ -154,7 +154,7 @@
             <a href="#" class=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="max-lg:w-4 w-10"
+                class="max-lg:w-4 w-5"
                 viewBox="0 0 24 40"
                 fill="none"
               >
@@ -167,7 +167,7 @@
             <a href="#" class=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="max-lg:w-6 w-10"
+                class="max-lg:w-6 w-9"
                 viewBox="0 0 39 32"
                 fill="none"
               >
@@ -180,7 +180,7 @@
             <a href="#" class=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="max-lg:w-6 w-10"
+                class="max-lg:w-6 w-8"
                 viewBox="0 0 39 40"
                 fill="none"
               >
@@ -195,7 +195,7 @@
             <a href="#" class=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="max-lg:w-6 w-10"
+                class="max-lg:w-6 w-8"
                 viewBox="0 0 39 38"
                 fill="none"
               >
@@ -208,7 +208,7 @@
             <a href="#" class=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="max-lg:w-6 w-10"
+                class="max-lg:w-6 w-9"
                 viewBox="0 0 43 32"
                 fill="none"
               >

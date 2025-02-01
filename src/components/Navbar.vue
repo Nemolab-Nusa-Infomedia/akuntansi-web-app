@@ -10,8 +10,8 @@
           <span class="material-icons"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
+              width="30"
+              height="30"
               viewBox="0 0 22 22"
               fill="none"
             >
@@ -22,7 +22,7 @@
             </svg>
           </span>
         </button>
-        <a href="#" class="text-lg font-bold max-lg:w-32"
+        <a href="#" class="text-lg font-bold max-lg:w-36"
           ><img src="/assets/icon/logo.svg" alt=""
         /></a>
       </div>
@@ -34,21 +34,21 @@
         }"
       >
         <li>
-          <a
-            href="/"
+          <router-link
+            to="/"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'tab1',
+              'text-red-500 font-bold': activeMenu === 'tab1',
               'hover:bg-secondary max-lg:text-white': activeMenu !== 'tab1',
             }"
             @click="setActive('tab1')"
           >
             Beranda
-          </a>
+          </router-link>
         </li>
         <li class="group">
           <button
-            class="flex items-center max-lg:justify-between max-lg:w-full md:gap-4 py-2 px-4 md:hover:text-[#F44336] rounded max-lg:hover:bg-secondary max-lg:text-white focus:outline-none"
+            class="flex items-center max-lg:justify-between max-lg:w-full md:gap-4 py-2 px-4 rounded max-lg:hover:bg-secondary max-lg:text-white focus:outline-none"
           >
             Fitur
             <svg
@@ -629,7 +629,7 @@
         </li>
         <li class="group">
           <button
-            class="flex items-center max-lg:justify-between max-lg:w-full md:gap-4 py-2 px-4 md:hover:text-[#F44336] rounded max-lg:hover:bg-secondary max-lg:text-white focus:outline-none"
+            class="flex items-center max-lg:justify-between max-lg:w-full md:gap-4 py-2 px-4 rounded max-lg:hover:bg-secondary max-lg:text-white focus:outline-none"
           >
             Solusi
             <svg
@@ -1389,30 +1389,30 @@
           </div>
         </li>
         <li>
-          <a
-            href="/harga"
+          <router-link
+            to="/harga"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'tab2',
-              'hover:bg-secondary max-lg:text-white ': activeMenu !== 'tab2',
+              'text-red-500 font-bold': activeMenu === 'tab2',
+              'hover:bg-secondary max-lg:text-white': activeMenu !== 'tab2',
             }"
             @click="setActive('tab2')"
           >
             Harga
-          </a>
+          </router-link>
         </li>
         <li>
-          <a
-            href="/blog"
+          <router-link
+            to="/blog"
             :class="{
               'block py-2 px-4 rounded sm:hover:bg-transparent': true,
-              'text-red-500': activeMenu === 'blog',
+              'text-red-500 font-bold': activeMenu === 'blog',
               'hover:bg-secondary max-lg:text-white': activeMenu !== 'blog',
             }"
             @click="setActive('blog')"
           >
             Blog
-          </a>
+          </router-link>
         </li>
       </ul>
 
@@ -1429,6 +1429,21 @@
 
 <script lang="ts">
 import { ref, defineComponent } from "vue";
+import { createRouter, createWebHistory } from "vue-router";
+import Beranda from "@/views/HomeView.vue";
+import Harga from "@/views/HargaView.vue";
+import Blog from "@/views/BlogView.vue";
+
+const routes = [
+  { path: "/", name: "Beranda", component: Beranda },
+  { path: "/harga", name: "Harga", component: Harga },
+  { path: "/blog", name: "Blog", component: Blog },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
 
 export default defineComponent({
   name: "Navbar",
@@ -1448,7 +1463,8 @@ export default defineComponent({
 
     // Fungsi untuk mengganti menu aktif di kolom utama
     const setActive = (menu: string) => {
-      activeMenu.value = menu;
+      activeMenu.value = menu; // Update state menu aktif
+      isMenuOpen.value = false; // Tutup menu setelah memilih (opsional untuk mobile)
     };
 
     // Fungsi untuk mengganti menu aktif di kolom fitur
