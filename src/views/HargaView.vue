@@ -16,7 +16,7 @@ const activeButton = ref("tahun");
             <span class="relative inline-block">
               Dengan Mudah
               <span
-                class="absolute inset-7 -z-10 bg-[#FFC055] h-6 w-[365px] left-1/2 -translate-x-1/2 rounded-sm"
+                class="absolute inset-7 max-lg:hidden -z-10 bg-[#FFC055] h-6 w-[365px] left-1/2 -translate-x-1/2 rounded-sm"
               ></span>
             </span>
           </h1>
